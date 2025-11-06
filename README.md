@@ -65,7 +65,8 @@ Este proyecto utiliza una base de datos PostgreSQL llamada `howmanyburgers_db`.
         **Asegúrate de reemplazar `TU_CONTRASEÑA_POSTGRESQL` con la contraseña real de tu usuario `postgres` en tu base de datos PostgreSQL local.** Si tu usuario `postgres` no tiene contraseña, usa `password=""` (cadena vacía). La URL `jdbc:postgresql://localhost:5432/howmanyburgers_db` asume que PostgreSQL está corriendo en el mismo equipo y puerto por defecto.
 
 *   **1.2. Crear la Base de Datos:**
-    Abre tu terminal (PowerShell en Windows, Bash en Linux/macOS) y ejecuta el siguiente comando para crear la base de datos. Asegúrate de sustituir `[TU_CONTRASEÑA_POSTGRES]` con la contraseña de tu usuario `postgres`.
+    Abre tu terminal (PowerShell en Windows, Bash en Linux/macOS) y ejecuta el siguiente comando para crear la base de datos.
+    Se te pedirá la contraseña del usuario `postgres`.
 
     ```bash
     psql -U postgres -c "CREATE DATABASE howmanyburgers_db;"
@@ -73,13 +74,11 @@ Este proyecto utiliza una base de datos PostgreSQL llamada `howmanyburgers_db`.
 
 *   **1.3. Crear el Esquema de la Base de Datos:**
     Ahora, ejecuta el script SQL que define las tablas `usuarios`, `juegos` y `records`, e inserta el juego "HowManyBurgers".
+    **Asegúrate de reemplazar `[RUTA_ABSOLUTA_HOWMANYBURGERSBD]` con la ruta completa al directorio donde se encuentra el archivo `database.sql` (por ejemplo, `C:\Users\chave\Documents\Codigo\java\How_manyBurgersBd`).** Se te pedirá la contraseña del usuario `postgres`.
 
-    **Asumiendo que el archivo `database.sql` se encuentra en el directorio `How_manyBurgersBd`:**
     ```bash
-    psql -U postgres -d howmanyburgers_db -f "C:\ruta\al\directorio\How_manyBurgersBd\database.sql"
+    psql -U postgres -d howmanyburgers_db -f "[RUTA_ABSOLUTA_HOWMANYBURGERSBD]\database.sql"
     ```
-    (Reemplaza `C:\ruta\al\directorio\How_manyBurgersBd` con la ruta real donde tengas el material de `How_manyBurgersBd`).
-    Introduce la contraseña de tu usuario `postgres` si te la solicita.
 
     **Verificación (Opcional):** Para asegurarte de que las tablas se crearon, puedes conectarte a la base de datos y listar las tablas:
     ```bash

@@ -1,0 +1,14 @@
+com\juego\howmanyburgers\dao\RecordsDAOImpl.class
+com\juego\howmanyburgers\servlet\LogoutServlet.class
+com\juego\howmanyburgers\servlet\RecordsServlet.class
+com\juego\howmanyburgers\servlet\JuegoServlet.class
+com\juego\howmanyburgers\servlet\LoginServlet.class
+com\juego\howmanyburgers\dao\UsuarioDAOImpl.class
+com\juego\howmanyburgers\model\Record.class
+com\juego\howmanyburgers\util\DBUtil.class
+com\juego\howmanyburgers\servlet\RegistroServlet.class
+com\juego\howmanyburgers\dao\UsuariosDAO.class
+com\juego\howmanyburgers\model\User.class
+com\juego\howmanyburgers\model\Juego.class
+com\juego\howmanyburgers\dao\RecordsDAO.class
+com\juego\howmanyburgers\repository\UserRepository.class
